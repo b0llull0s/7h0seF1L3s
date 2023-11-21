@@ -73,9 +73,10 @@ ENABLE_CORRECTION="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
 # User configuration
-
+## Pywal ##
+(cat ~/.cache/wal/sequences &)
+cat ~/.cache/wal/sequences
 ## PATHS ##
 
 # You may need to manually set your language environment
@@ -98,4 +99,10 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias getclass='(sleep 1; xprop | grep WM_CLASS)'
+alias syst='systemctl status'
+alias syse='systemctl enable'
+alias sysd='systemctl disable'
+
+
+
 
