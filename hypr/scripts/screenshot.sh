@@ -1,30 +1,31 @@
 #!/bin/bash
-#  ____                               _           _    
-# / ___|  ___ _ __ ___  ___ _ __  ___| |__   ___ | |_  
-# \___ \ / __| '__/ _ \/ _ \ '_ \/ __| '_ \ / _ \| __| 
-#  ___) | (__| | |  __/  __/ | | \__ \ | | | (_) | |_  
-# |____/ \___|_|  \___|\___|_| |_|___/_| |_|\___/ \__| 
-#                                                      
+# ______________  _________     _______     __________   _____________
+#   \\______   \ / |   // ____//___ |  ____ \\__    \\  //   _____//  
+#   ||    |__ ///   |  |_ /    \ |   |// ___\\ //  |  \\ \\_____  \\ 
+#   ||    |   //    ^   /|  |   \|   |\ \\___ //   |   \\//______\ \\
+#   ||    |  / \____  |||___|__/|___| \___//>\\______////_______  // 
+#    \\__/        ||__|/     \/           \/         \/         \//                
+#                  \  /      /             \         /          /                                                      
 #  
-# by Stephan Raabe (2023) 
+# by Isaac P. Bassart (22-11-2023) 
 # ----------------------------------------------------- 
 
 DIR="$HOME/Screenshots/"
 NAME="screenshot_$(date +%d%m%Y_%H%M%S).png"
 
 option2="Selected area"
-option3="Fullscreen (delay 3 sec)"
+option3="Fullscreen"
 
-options="$option2\n$option3"
+options="$option1\n$option2"
 
 choice=$(echo -e "$options" | rofi -dmenu -replace -config ~/.config/rofi/config-screenshot.rasi -i -no-show-icons -l 2 -width 30 -p "Take Screenshot")
 
 case $choice in
-    $option2)
+    $option1)
         grim -g "$(slurp)" - | swappy -f -
         notify-send "Screenshot created" "Mode: Selected area"
     ;;
-    $option3)
+    $option2)
         sleep 3
         grim - | swappy -f -
         notify-send "Screenshot created" "Mode: Fullscreen"
