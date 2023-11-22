@@ -64,6 +64,7 @@ window#waybar {
     border-radius: 10px;
     border-left: 0px;
     border-right: 0px;
+    margin-right: 5px;
 }
 
 #custom-updates {
@@ -71,6 +72,7 @@ window#waybar {
     border-radius: 10px;
     border-left: 0px;
     border-right: 0px;
+    margin-left: 5px;
 }
 
 #clock {
@@ -85,6 +87,7 @@ window#waybar {
     color: @color10;
     border-left: 0px;
     border-right: 0px;
+    margin-right: 5px;
 }
 
 #pulseaudio {
@@ -92,29 +95,31 @@ window#waybar {
     border-radius: 10px;
     border-left: 0px;
     border-right: 0px;
+    margin-left: 5px;
 }
 
 #battery {
     color: @color12;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
     margin-right: 10px;
     border-left: 0px;
 }
 #cpu {
     color: @color7;
     border-radius: 10px;
-    margin-right: 0px;
+    margin-right: 5px;
     border-left: 0px;
 }
 #memory {
     color: @color9;
     border-radius: 10px;
-    margin-right: 0px;
+    margin-right: 5px;
     border-left: 0px;
 }
 #disk {
     color: @color4;
     border-radius: 10px;
-    margin-right: 0px;
+    margin-right: 5px;
     border-left: 0px;
 }
+
