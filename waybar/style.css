@@ -1,44 +1,35 @@
-* {
+/* Color Source */
+@import "../../.cache/wal/colors-waybar.css";
+/* Basic */
+*{
     border: none;
     border-radius: 0;
     font-family: Cartograph CF Nerd Font, monospace;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     min-height: 0;
 }
-
+/* Bar */
 window#waybar {
     background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
 }
-
+/* Workspaces */
 #workspaces button {
     /*padding: 5px;*/
-    color: #313244;
+    color: @color2;
     /*margin-right: 5px;*/
 }
 
 #workspaces button.active {
-    color: #a6adc8;
-}
-
-#workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
-    /*border-radius: 10px;*/
-}
-
-#workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    /*border-radius: 10px;*/
+    color: @color1;
 }
 
 #workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
+    background: rgba(21, 18, 27, 0);
+    color: @color11;
     /*border-radius: 10px;*/
 }
+/* Backgrounded Modules */
 #cpu,
 #memory,
 #disk,
@@ -49,31 +40,31 @@ window#waybar {
 #pulseaudio,
 #network,
 #workspaces,
-
+/* Background */
 #workspaces {
-    background: #1e1e2e;
+    background: @color0;
     border-radius: 10px;
     margin-left: 0px;
     padding-right: 10px;
     padding-left: 10px;
 }
-
+/* Modules */
 #custom-vpn {
-    color: #f5c2e7;
+    color: @color13;
     border-radius: 10px;
     border-left: 0px;
     border-right: 0px;
 }
 
 #custom-updates {
-    color: #f5c2e7;
+    color: @color3;
     border-radius: 10px;
     border-left: 0px;
     border-right: 0px;
 }
 
 #clock {
-    color: #fab387;
+    color: @color6;
     border-radius: 10px;
     margin-left: 5px;
     border-right: 0px;
@@ -81,13 +72,13 @@ window#waybar {
 
 #network {
     border-radius: 10px;
-    color: #f9e2af;
+    color: @color10;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio {
-    color: #89b4fa;
+    color: @color8;
     border-radius: 10px;
     border-left: 0px;
     border-right: 0px;
@@ -100,19 +91,19 @@ window#waybar {
     border-left: 0px;
 }
 #cpu {
-    color: #a6e3a1;
+    color: @color7;
     border-radius: 10px;
     margin-right: 0px;
     border-left: 0px;
 }
 #memory {
-    color: #a6e3a1;
+    color: @color9;
     border-radius: 10px;
     margin-right: 0px;
     border-left: 0px;
 }
 #disk {
-    color: #a6e3a1;
+    color: @color4;
     border-radius: 10px;
     margin-right: 0px;
     border-left: 0px;
