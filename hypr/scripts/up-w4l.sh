@@ -6,8 +6,9 @@
 #   \ \  \___|\|_____|\  \ \  \\ \  \   \ \  \ \  \____  
 #    \ \__\          \ \__\ \__\\ \__\   \ \__\ \_______\
 #     \|__|           \|__|\|__| \|__|    \|__|\|_______|
-# Set the path to your wallpaper folder
+# 
 # by Isaac P. Bassart (22/12/2023)
+# Set the path to your wallpaper folder
 WALLPAPER_FOLDER="$HOME/Downloads/w4llp4p3rs"
 
 # Function to set wallpaper and reset Waybar
