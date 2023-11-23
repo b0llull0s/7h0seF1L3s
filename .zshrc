@@ -1,13 +1,3 @@
-# ______________  _________     _______     __________   _____________
-#   \\______   \ / |   // ____//___ |  ____ \\__    \\  //   _____//  
-#   ||    |__ ///   |  |_ /    \ |   |// ___\\ //  |  \\ \\_____  \\ 
-#   ||    |   //    ^   /|  |   \|   |\ \\___ //   |   \\//______\ \\
-#   ||    |  / \____  |||___|__/|___| \___//>\\______////_______  // 
-#    \\__/        ||__|/     \/           \/         \/         \//                
-#                  \  /      /             \         /          /                                                      
-#  
-# by Isaac P. Bassart (22-11-2023) 
-# ----------------------------------------------------- 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -85,8 +75,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 # User configuration
 ## Pywal ##
-(cat ~/.cache/wal/sequences &)
 cat ~/.cache/wal/sequences
+#cat ~/.cache/wal/sequences
 ## PATHS ##
 
 # You may need to manually set your language environment
@@ -103,16 +93,16 @@ cat ~/.cache/wal/sequences
 # export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can ñññbe placed here, though oh-my-zsh
+# plugins, and themes. Aliases ca be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+## Aliases ##
 alias getclass='(sleep 1; xprop | grep WM_CLASS)'
 alias syst='systemctl status'
 alias syse='systemctl enable'
 alias sysd='systemctl disable'
-
-
-
-
+alias syss='systemctl start'
+alias cya='shutdown -h now'
+## Functions ##
+function cheat() { curl -m 7 "http://cheat.sh/$1"; }
