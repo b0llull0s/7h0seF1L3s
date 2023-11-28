@@ -98,7 +98,7 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
-alias getclass='(sleep 1; xprop | grep WM_CLASS)'
+alias wclass="xprop | grep 'CLASS'"
 alias syst='systemctl status'
 alias syse='systemctl enable'
 alias sysd='systemctl disable'
@@ -106,5 +106,7 @@ alias syss='systemctl start'
 alias cya='shutdown -h now'
 alias audio='pavucontrol'
 alias up='sudo pacman -Syu'
+alias ls='exa -al'
+
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
