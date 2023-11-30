@@ -13,8 +13,8 @@
 DIR="$HOME/Screenshots/"
 NAME="screenshot_$(date +%d%m%Y_%H%M%S).png"
 
-option2="Selected area"
-option3="Fullscreen"
+option1="Selected area"
+option2="Fullscreen"
 
 options="$option1\n$option2"
 
