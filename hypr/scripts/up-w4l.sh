@@ -22,7 +22,7 @@ set_wallpaper() {
 
 # Ask for options
 options=("random" "select")
-selected_option=$(echo -e "1. ${options[0]}\n2. ${options[1]}" | rofi -dmenu -p "Choose wallpaper option:")
+selected_option=$(echo -e "1. ${options[0]}\n2. ${options[1]}" |  rofi -dmenu -i -no-show-icons -l 2 -width 30 -p "Choose wallpaper option:")
 
 # Handle the selected option
 case "$selected_option" in
